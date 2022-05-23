@@ -58,8 +58,9 @@ export default function App() {
   // part 4
   const fetchNextUser = () => {
     fetchRandomData(nextPageNumber).then(randomData => {
-      // // remove comment to see JSON on page
+      // // remove comment to see JSON on page for part 2
       // setRandomUserDataJSON(JSON.stringify(randomData, null, 2))
+
 
       // added to prevent page break on click spam
       if (randomData === undefined) return
